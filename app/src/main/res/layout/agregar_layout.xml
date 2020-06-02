@@ -3,60 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="400dp"
-    android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/editText_nombreasig"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Nombre Asignatura"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewnuevaasig" />
+    android:layout_height="match_parent"
+    >
 
     <ImageView
         android:id="@+id/imageViewnuevaasig"
         android:layout_width="111dp"
         android:layout_height="98dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/files" />
-
-    <EditText
-        android:id="@+id/editText_descrip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Descripción:"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_nombreasig" />
-
-    <EditText
-        android:id="@+id/editText_Profesor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Profesor:"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_descrip" />
+        app:srcCompat="@drawable/book" />
 
     <EditText
         android:id="@+id/editText_Dia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Dia:"
         android:inputType="textPersonName"
@@ -64,28 +29,64 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_Profesor" />
 
     <EditText
-        android:id="@+id/editText_hora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Hora"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Dia" />
-
-    <EditText
         android:id="@+id/editText_fechaentre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Fecha de Entrega"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_hora" />
+
+    <EditText
+        android:id="@+id/editText_descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Descripción:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nombreasig" />
+
+    <EditText
+        android:id="@+id/editText_nombreasig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Nombre Asignatura"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewnuevaasig" />
+
+    <EditText
+        android:id="@+id/editText_Profesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Profesor:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_descrip" />
+
+    <EditText
+        android:id="@+id/editText_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Hora"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Dia" />
 
     <Button
         android:id="@+id/btnagregar"
@@ -99,7 +100,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btncancelar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_fechaentre" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_fechaentre"
+        app:layout_constraintVertical_bias="0.485" />
 
     <Button
         android:id="@+id/btncancelar"
